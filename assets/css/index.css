@@ -3,7 +3,7 @@
  * 公共部分
  * ------------------------------------------------- */
 body {
-  background: #e5e5e5 url(../../assets/images/background.png);
+  background: #E9E9E9 url(../../assets/images/background.png);
   width: 100%;
   overflow-x: hidden;
   padding: 1rem 10%;
@@ -18,13 +18,35 @@ body {
       font-weight: 700; }
     body .info-unit h3 {
       font-weight: 300; }
-
 /* -------------------------------------------------
  * 头部部分
  * ------------------------------------------------- */
-.header {
-  display: none; }
-
+ /* -------------------------------------------------
+  * 新增头部
+  * ------------------------------------------------- */
+	header {
+					background-color: #383836;
+					font-family: "幼圆";
+					font-size: 3em;
+					color: #FFFFFF;
+					height: 130px;
+					display: flex;
+					align-items: center;
+					text-transform: uppercase;
+					justify-content: center;
+				}
+/* -------------------------------------------------
+*新增导航
+* -------------------------------------------------- */
+	nav {
+				background-color: #748A92;
+				font-family: "华文行楷";
+				font-size: 2rem;
+				min-height: 2.75rem;
+				display: flex;
+				align-items: center;
+				padding: 0 1.5rem;
+			}
 /* -------------------------------------------------
  * 主体部分
  * ------------------------------------------------- */
@@ -73,7 +95,7 @@ body {
   0%,100% {
     height: 3rem;
     margin: .5rem 0;
-    background: lightblue; }
+    background: #1ABC9C; }
   50% {
     height: 1rem;
     margin: 1.5rem 0;
@@ -93,11 +115,13 @@ body {
         border-radius: 50%; }
   .container .side .info-unit ul li label {
     display: inline-block;
-    width: 35%; }
+    width: 35%; 
+		background-color: #E9E9E9;}
   .container .side .info-unit ul li span {
     display: inline-block;
     vertical-align: top;
-    width: 60%; }
+    width: 60%; 
+		background-color: ghostwhite;}
 .container .main {
   position: relative;
   margin-left: 22rem;
@@ -105,7 +129,8 @@ body {
   border-radius: 5px;
   box-shadow: 0 5px 20px #bbb;
   box-sizing: border-box;
-  padding: 1rem; }
+  padding: 1rem;
+	background-color: seashell;}
   .container .main .info-unit ul {
     box-sizing: border-box;
     padding-left: 1.2rem;
@@ -140,18 +165,51 @@ body {
     line-height: 2rem;
     text-align: center;
     font-size: 0.8rem; }
+/* -------------------------------------------------
+ * 新增页脚
+ * ------------------------------------------------- */
+		footer {
+				width: 100%;
+				height: 85px;
+				font-family: "隶书";
+				font-size: 1.5rem;
+				color: #F2DCDD;
+				background-color: #363535;
+				}
 
 /* -------------------------------------------------
  * 自定义部分
  * ------------------------------------------------- */
+ /* -------------------------------------------------
+  * 新增导航盒子
+  * ------------------------------------------------- */
+.leftbox,
+.rightbox {
+ 				color: #F1D2D2;
+ 				text-decoration: none;
+ 			}
+ 			.leftbox {
+ 				margin-right: 4rem;
+ 			}
+ 			.rightbox {
+ 				margin-left: auto;
+ 			}
 .fa {
   font-size: 1.2em; }
+h1 {
+	color: #748A92;
+}
 
 h2 {
-  font-size: 1.2em; }
+  font-size: 1.5em;
+	font-family: "华文楷体";
+	color: #F1D6EA;
+	 }
 
 h3 {
-  font-size: 1.1em; }
+  font-size: 1.3em;
+	font-family: "幼圆";
+	 }
 
 hr {
   margin-bottom: .4em; }
@@ -181,6 +239,9 @@ progress {
   display: inline;
   /*width: 195px;*/
   height: 1em; }
+.progress-none {
+	display: none;
+}
 
 progress::-webkit-progress-bar {
   background-color: #e0eaf0; }
